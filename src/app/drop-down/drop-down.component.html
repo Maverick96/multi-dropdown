@@ -1,0 +1,13 @@
+<div class="drop-down">
+    <button class="drop-toggle btn flat" (click)="showDropDown=!showDropDown">
+        <span>Select Users</span>
+        <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="drop-show" *ngIf="showDropDown">
+        <div class="user" *ngFor="let user of userList; let i=index" (click)="getSelectedValue(user, i)">
+            <span>{{user.name}}</span>
+            <input *ngIf="user.status" class="ml-1" type="checkbox"  [(ngModel)]="user.status" 
+                />
+        </div>
+    </div>
+</div>

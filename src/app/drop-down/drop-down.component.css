@@ -1,0 +1,53 @@
+.drop-toggle{
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    border: 1px solid #ccc;
+    width: 233px;
+    text-align: left;
+}
+.drop-toggle i{
+    float:right;
+}
+
+.drop-down{
+    width: 20vw;
+}
+
+
+.user:hover{
+    background-color: rgb(231, 227, 227);
+}
+
+
+.drop-show {
+    padding: 4px;
+    width: 222px;
+    background-color: #FFF;
+    border: 1px solid #BABABA;
+    /* position: absolute; */
+    z-index: 100;
+    -webkit-box-shadow: 0 6px 10px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 6px 10px rgba(0,0,0,.15);
+    box-shadow: 0 6px 10px rgba(0,0,0,.15);
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.drop-show div{
+    /* font-size:15px; */
+    cursor: pointer;
+    margin: 4px 0px;
+}
+.drop-show div input{
+    vertical-align: top;
+}
+.drop-show .user {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

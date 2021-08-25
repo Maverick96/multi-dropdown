@@ -1,0 +1,14 @@
+<div class="body"> 
+
+    <app-drop-down [userList]="userList" (selectedUsers)="updateSelectedUsers($event)"></app-drop-down>
+    
+    <div class="selected-users">
+      <div *ngFor="let user of selectedUserList; let i=index">
+        <app-pill [name]="user" [index]="i" (removeUser)="removeSelectedUser($event)"></app-pill>
+      
+      </div>
+  
+    </div>
+  
+  
+  </div>
